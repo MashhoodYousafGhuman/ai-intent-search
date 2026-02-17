@@ -632,7 +632,7 @@ ONLY return a JSON object with "filter" and optionally "limit". No explanations 
       createdAt: new Date(),
     });
 
-    console.log('💾 Conversation saved to memory');
+    console.log('Conversation saved to memory');
   }
 
   // Main entry point for processing user questions
