@@ -11,7 +11,9 @@ async function bootstrap() {
   //  await appService.onModuleInit();
   app.useLogger(false);
 
-  await app.listen(process.env.PORT ?? 4000);
+  const port = process.env.PORT || 4000;
+  await app.listen(port, '0.0.0.0');
+ 
   console.log('app is running on http://localhsost:4000');
 }
 bootstrap();
